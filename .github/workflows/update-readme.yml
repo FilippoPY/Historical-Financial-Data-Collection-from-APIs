@@ -1,0 +1,16 @@
+name: Update README with activity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update activity in README
+        uses: TheDanniCraft/activity-log@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
