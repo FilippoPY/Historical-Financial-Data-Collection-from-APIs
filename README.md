@@ -29,3 +29,4 @@ The goal of the project is to set up a workflow that automatically collects and 
 
 ---
 **Note:** This section will be automatically updated by GitHub Actions.
+Test Smart Commit - should auto-close FPSD-4
