@@ -1,0 +1,15 @@
+
+name: Update README with activity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: TheDanniCraft/activity-log@v1
+        with:
+          username: FilippoPY
+          token:  ${{ secrets.REPO_TOKEN }}
